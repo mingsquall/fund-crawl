@@ -53,9 +53,15 @@ user     comment_time
 ``` 
 
 ## Data Mining
-- 完成了上述数据获取，持久化后，接下来进行数据分析
+
+- 项目前置的数据获取工作已完成，现在我们需要在此完成基金评论的数据的情感分析。
 
 - 前往查看：[基金情感分析过程](http://nbviewer.jupyter.org/github/patientman/fund-crawl/blob/master/sentiment_analyse.ipynb)
+
+- 整体分析过程将划分为以下部分：
+    - 使用SnowNLP生成情感值
+    - 利用情感值进行属性构造，通过matplotlib绘图
+
 - 探索后得到情感值均值的14天移动均值的变化情况可能与基金净值的涨跌幅情况存在相关关系
     - 此处以易方达中小盘混合(110011)为例 
     - 其情感值均值的14天移动均值的变化情况如下所示：
